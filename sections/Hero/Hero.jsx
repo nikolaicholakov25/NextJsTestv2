@@ -1,4 +1,5 @@
 import Image from "next/image";
+import bgImg from '../../resources/background.png'
 
 import {
   StyledTextContainer,
@@ -14,7 +15,7 @@ import {
 
 export const Hero = ({ image, title, description, ctaText, ...props }) => {
   return (
-    <StyledContainer {...props}>
+    <StyledContainer style={{backgroundImage: bgImg}} {...props}>
 
       <StyledTextContainer>
         <StyledTitle>{title}</StyledTitle>
@@ -29,6 +30,7 @@ export const Hero = ({ image, title, description, ctaText, ...props }) => {
         alt="Landscape picture"
         width='330'
         height='450'
+        // layout="responsive"
         />
         </StyledImg>
       <StyledCard text={props.text}/>

@@ -1,6 +1,6 @@
 import { Hero } from "../sections";
 import pic from '../resources/video.png'
-import "@fortawesome/fontawesome-svg-core/styles.css"; // import Font Awesome CSS
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 

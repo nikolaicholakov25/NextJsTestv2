@@ -17,7 +17,6 @@ import {
   } from "@fortawesome/free-solid-svg-icons";
 
 export const Card = ({text: {text1, text2, text3}}) => {
-    console.log(text1.imgClass);
     return (
         <TextBoxWrapper>
         

@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { Button, SectionContainer, SectionBigHeading, SectionSubheading } from "~/components";
 import { Card } from '../../collections/index'
-
 export const StyledContainer = styled(({ height, ...props }) => <SectionContainer {...props} />)`
   align-items: center;
   margin-top: 2.4em;
+  background-image: url("../../resources/background.png");
 
   @media (max-width: 1024px){
     margin: 0;
