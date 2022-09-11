@@ -10,13 +10,19 @@ import {
   StyledCTAContainer,
   StyledImageContainer,
   StyledCard,
-  StyledImg
+  StyledImg,
+  StyledBackgroundImage
 } from "./elements";
 
 export const Hero = ({ image, title, description, ctaText, ...props }) => {
   return (
-    <StyledContainer style={{backgroundImage: bgImg}} {...props}>
-
+    <StyledContainer  {...props}>
+      <StyledBackgroundImage>
+      <Image 
+      src={bgImg}
+      alt='bgimg'
+      />
+      </StyledBackgroundImage>
       <StyledTextContainer>
         <StyledTitle>{title}</StyledTitle>
         <StyledDescription>{description}</StyledDescription>

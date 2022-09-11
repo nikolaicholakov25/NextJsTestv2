@@ -1,10 +1,12 @@
 import styled from "styled-components";
-import { Button, SectionContainer, SectionBigHeading, SectionSubheading } from "~/components";
+import { Button, SectionContainer, SectionBigHeading, SectionSubheading} from "~/components";
 import { Card } from '../../collections/index'
+import { BackgroundImage } from "../../components/Containers/BackgroundImageContainer/index";
+
 export const StyledContainer = styled(({ height, ...props }) => <SectionContainer {...props} />)`
   align-items: center;
   margin-top: 2.4em;
-  background-image: url("../../resources/background.png");
+  // background-image: url("../../resources/background.png");
 
   @media (max-width: 1024px){
     margin: 0;
@@ -33,6 +35,7 @@ export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
   width: 100%;
   text-align: center;
   font-family: sans-serif;
+  z-index:100;
 `;
 
 export const StyledCTAContainer = styled(({ ...props }) => <div {...props} />)`
@@ -46,6 +49,7 @@ export const StyledImageContainer = styled(({ ...props }) => <div {...props} />)
   justify-content: space-around;
   height: 30vw;
   gap:2rem;
+  z-index:120;
 
   @media (max-width: 1024px){
     flex-direction: column;
@@ -64,3 +68,5 @@ export const StyledImg = styled.div`
     margin:auto;
   }
 `
+
+export const StyledBackgroundImage = styled(({...props}) => <BackgroundImage {...props}/>)``
